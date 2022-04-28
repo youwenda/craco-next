@@ -2,7 +2,7 @@
 
 # 前言
 
-> 本文档阐述基于 `lerna` 和 `yarn workspaces` 模式的 monorepo 项目在小程序目录中使用 `npm` 完成包的发布。
+> 本文档阐述基于 `lerna` 和 `yarn workspaces` 模式的 monorepo 的项目开发。
 
 由于`yarn` 和 `lerna` 在功能上有较多的重叠，项目中采用`yarn`官方推荐的做法，用`yarn`来处理依赖问题，用`lerna`来处理发布问题，能用`yarn`做的就用`yarn`来做。
 
@@ -11,7 +11,7 @@
 首先确保全局安装 `yarn`、`lerna`
 
 ```bash
-tnpm i -g yarn lerna
+npm i -g yarn lerna
 ```
 
 ## 管理依赖
