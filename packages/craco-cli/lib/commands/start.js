@@ -11,7 +11,7 @@ const getConfig = require('../utils/getConfig');
 // 检测是否含有dll资源，如果没有初次启动执行
 function runDll() {
   if (process.env.NO_VENDORS_DLL === 'true' || process.env.DISABLE_VENDORS_DLL === 'true') {
-    return;
+    return Promise.resolve();
   }
 
   const vendorsPath = path.resolve(paths.appPublic, 'vendors');

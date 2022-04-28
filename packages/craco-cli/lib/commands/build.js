@@ -42,6 +42,9 @@ const setEnv = require('../utils/setEnv');
 const getConfig = require('../utils/getConfig');
 
 function runDll() {
+  if (process.env.NO_VENDORS_DLL === 'true' || process.env.DISABLE_VENDORS_DLL === 'true') {
+    return Promise.resolve();
+  }
   return require('./dll')();
 }
 
