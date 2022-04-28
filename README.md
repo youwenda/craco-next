@@ -47,6 +47,6 @@ yarn workspace craco-cli add customize-cra-extra@^0.0.1
 lerna version
 
 # 使用 npx 调用 @ali/lerna 完成发布
-lerna publish from-git 
+lerna publish from-git
 
 ```

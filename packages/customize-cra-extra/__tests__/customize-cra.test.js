@@ -23,7 +23,7 @@ describe('getBabelLoader', () => {
           fixBabelImports('lodash', {
             libraryDirectory: '',
             camel2DashComponentName: false,
-          }),
+          })
         )(config)
       )
     ).toMatchSnapshot();
