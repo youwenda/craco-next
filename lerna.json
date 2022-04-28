@@ -1,0 +1,16 @@
+{
+  "packages": ["packages/*"],
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "ignoreChanges": ["*.md"],
+      "verifyRegistry": false,
+      "verifyAccess": false,
+      "allowBranch": ["master"],
+      "message": "chore: publish"
+    }
+  }
+}
+

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getBabelLoader get in src modules 1`] = `
+Object {
+  "include": Array [
+    "craco-next/packages/customize-cra-extra/src",
+    "lib",
+    "es",
+  ],
+  "loader": "craco-next/node_modules/babel-loader/lib/index.js",
+  "options": Object {
+    "babelrc": true,
+    "cacheCompression": false,
+    "cacheDirectory": true,
+    "cacheIdentifier": "development:babel-plugin-named-asset-import@0.3.8:babel-preset-react-app@10.0.1:react-dev-utils@12.0.1:react-scripts@5.0.1",
+    "compact": false,
+    "configFile": false,
+    "customize": "craco-next/node_modules/babel-preset-react-app/webpack-overrides.js",
+    "plugins": Array [
+      "craco-next/node_modules/react-refresh/babel.js",
+      Array [
+        "@babel/plugin-proposal-decorators",
+        Object {
+          "legacy": true,
+        },
+      ],
+      Array [
+        "import",
+        Object {
+          "camel2DashComponentName": false,
+          "libraryDirectory": "",
+          "libraryName": "lodash",
+        },
+        "fix-lodash-imports",
+      ],
+    ],
+    "presets": Array [
+      Array [
+        "craco-next/node_modules/babel-preset-react-app/index.js",
+        Object {
+          "runtime": "classic",
+        },
+      ],
+      "@babel/preset-env",
+    ],
+  },
+  "test": /\\\\\\.\\(js\\|mjs\\|jsx\\|ts\\|tsx\\)\\$/,
+}
+`;

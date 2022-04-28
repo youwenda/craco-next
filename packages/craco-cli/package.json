@@ -1,0 +1,36 @@
+{
+  "name": "craco-cli",
+  "version": "3.0.1-alpha.0",
+  "description": "New Generation For Craco scripts",
+  "author": "youwenda <youwenda@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "cli.js",
+  "bin": {
+    "craco-cli": "./cli.js"
+  },
+  "files": [
+    "lib",
+    "cli.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:youwenda/craco-next.git"
+  },
+  "scripts": {
+    "test": "jest ./__tests__/*.test.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "commander": "^8.3.0",
+    "cross-spawn": "^7.0.3",
+    "customize-cra-extra": "^3.0.1-alpha.0",
+    "inquirer": "^8.2.0",
+    "node-libs-browser": "^2.2.1",
+    "react-scripts": "5.0.1",
+    "semver": "^7.3.5",
+    "shelljs": "^0.8.5",
+    "webpackbar": "^5.0.2"
+  }
+}

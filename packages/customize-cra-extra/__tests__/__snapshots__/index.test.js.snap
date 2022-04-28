@@ -1,0 +1,576 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`addBabelIncludes add array in node_modules babel 1`] = `
+Object {
+  "exclude": /@babel\\(\\?:\\\\/\\|\\\\\\\\\\{1,2\\}\\)runtime/,
+  "include": Array [
+    "lib",
+    "lib2",
+  ],
+  "loader": "craco-next/node_modules/babel-loader/lib/index.js",
+  "options": Object {
+    "babelrc": false,
+    "cacheCompression": false,
+    "cacheDirectory": true,
+    "cacheIdentifier": "development:babel-plugin-named-asset-import@0.3.8:babel-preset-react-app@10.0.1:react-dev-utils@12.0.1:react-scripts@5.0.1",
+    "compact": false,
+    "configFile": false,
+    "inputSourceMap": true,
+    "presets": Array [
+      Array [
+        "craco-next/node_modules/babel-preset-react-app/dependencies.js",
+        Object {
+          "helpers": true,
+        },
+      ],
+    ],
+    "sourceMaps": true,
+  },
+  "test": /\\\\\\.\\(js\\|mjs\\)\\$/,
+}
+`;
+
+exports[`addBabelIncludes add array in src babel 1`] = `
+Object {
+  "include": Array [
+    "craco-next/packages/customize-cra-extra/src",
+    "lib",
+    "lib2",
+  ],
+  "loader": "craco-next/node_modules/babel-loader/lib/index.js",
+  "options": Object {
+    "babelrc": false,
+    "cacheCompression": false,
+    "cacheDirectory": true,
+    "cacheIdentifier": "development:babel-plugin-named-asset-import@0.3.8:babel-preset-react-app@10.0.1:react-dev-utils@12.0.1:react-scripts@5.0.1",
+    "compact": false,
+    "configFile": false,
+    "customize": "craco-next/node_modules/babel-preset-react-app/webpack-overrides.js",
+    "plugins": Array [
+      "craco-next/node_modules/react-refresh/babel.js",
+    ],
+    "presets": Array [
+      Array [
+        "craco-next/node_modules/babel-preset-react-app/index.js",
+        Object {
+          "runtime": "classic",
+        },
+      ],
+    ],
+  },
+  "test": /\\\\\\.\\(js\\|mjs\\|jsx\\|ts\\|tsx\\)\\$/,
+}
+`;
+
+exports[`addBabelIncludes add string in src babel 1`] = `
+Object {
+  "include": Array [
+    "craco-next/packages/customize-cra-extra/src",
+    "lib",
+  ],
+  "loader": "craco-next/node_modules/babel-loader/lib/index.js",
+  "options": Object {
+    "babelrc": false,
+    "cacheCompression": false,
+    "cacheDirectory": true,
+    "cacheIdentifier": "development:babel-plugin-named-asset-import@0.3.8:babel-preset-react-app@10.0.1:react-dev-utils@12.0.1:react-scripts@5.0.1",
+    "compact": false,
+    "configFile": false,
+    "customize": "craco-next/node_modules/babel-preset-react-app/webpack-overrides.js",
+    "plugins": Array [
+      "craco-next/node_modules/react-refresh/babel.js",
+    ],
+    "presets": Array [
+      Array [
+        "craco-next/node_modules/babel-preset-react-app/index.js",
+        Object {
+          "runtime": "classic",
+        },
+      ],
+    ],
+  },
+  "test": /\\\\\\.\\(js\\|mjs\\|jsx\\|ts\\|tsx\\)\\$/,
+}
+`;
+
+exports[`addLoaders addLoaders [{test:'.jsx',loader: 'babel-loader'}, {test: 'jsx2', use: [{ loader: 'babel-loader' }]}] 1`] = `
+Array [
+  Object {
+    "loader": "babel-loader",
+    "test": ".jsx",
+  },
+  Object {
+    "test": "jsx2",
+    "use": Array [
+      Object {
+        "loader": "babel-loader",
+      },
+    ],
+  },
+  Object {
+    "exclude": Array [
+      /\\^\\$/,
+      /\\\\\\.\\(js\\|mjs\\|jsx\\|ts\\|tsx\\)\\$/,
+      /\\\\\\.html\\$/,
+      /\\\\\\.json\\$/,
+    ],
+    "type": "asset/resource",
+  },
+]
+`;
+
+exports[`addPlugins add one plugin 1`] = `
+Array [
+  HtmlWebpackPlugin {
+    "userOptions": Object {
+      "inject": true,
+      "template": "craco-next/packages/customize-cra-extra/public/index.html",
+    },
+    "version": 5,
+  },
+  InterpolateHtmlPlugin {
+    "htmlWebpackPlugin": [Function],
+    "replacements": Object {
+      "FAST_REFRESH": true,
+      "NODE_ENV": "test",
+      "PUBLIC_URL": "",
+      "WDS_SOCKET_HOST": undefined,
+      "WDS_SOCKET_PATH": undefined,
+      "WDS_SOCKET_PORT": undefined,
+    },
+  },
+  ModuleNotFoundPlugin {
+    "appPath": "craco-next/packages/customize-cra-extra",
+    "getRelativePath": [Function],
+    "prettierError": [Function],
+    "useYarnCommand": [Function],
+    "yarnLockFile": undefined,
+  },
+  DefinePlugin {
+    "definitions": Object {
+      "process.env": Object {
+        "FAST_REFRESH": "true",
+        "NODE_ENV": "\\"test\\"",
+        "PUBLIC_URL": "\\"\\"",
+        "WDS_SOCKET_HOST": undefined,
+        "WDS_SOCKET_PATH": undefined,
+        "WDS_SOCKET_PORT": undefined,
+      },
+    },
+  },
+  ReactRefreshPlugin {
+    "options": Object {
+      "exclude": /node_modules/i,
+      "include": /\\\\\\.\\(\\[cm\\]js\\|\\[jt\\]sx\\?\\|flow\\)\\$/i,
+      "overlay": false,
+    },
+  },
+  CaseSensitivePathsPlugin {
+    "fsOperations": 0,
+    "logger": BufferedConsole {
+      "Console": [Function],
+      "_buffer": Array [],
+      "_counters": Object {},
+      "_groupDepth": 0,
+      "_timers": Object {},
+      "assert": [Function],
+      "clear": [Function],
+      "count": [Function],
+      "countReset": [Function],
+      "debug": [Function],
+      "dir": [Function],
+      "dirxml": [Function],
+      "error": [Function],
+      "group": [Function],
+      "groupCollapsed": [Function],
+      "groupEnd": [Function],
+      "info": [Function],
+      "log": [Function],
+      "table": [Function],
+      "time": [Function],
+      "timeEnd": [Function],
+      "timeLog": [Function],
+      "trace": [Function],
+      "warn": [Function],
+    },
+    "options": Object {},
+    "pathCache": Map {},
+    "primed": false,
+  },
+  WebpackManifestPlugin {
+    "options": Object {
+      "basePath": "",
+      "fileName": "asset-manifest.json",
+      "filter": null,
+      "generate": [Function],
+      "map": null,
+      "publicPath": "/",
+      "removeKeyHash": /\\(\\[a-f0-9\\]\\{16,32\\}\\\\\\.\\?\\)/gi,
+      "seed": undefined,
+      "serialize": [Function],
+      "sort": null,
+      "transformExtensions": /\\^\\(gz\\|map\\)\\$/i,
+      "useEntryKeys": false,
+      "useLegacyEmit": false,
+      "writeToFileEmit": false,
+    },
+  },
+  IgnorePlugin {
+    "checkIgnore": [Function],
+    "options": Object {
+      "contextRegExp": /moment\\$/,
+      "resourceRegExp": /\\^\\\\\\.\\\\/locale\\$/,
+    },
+  },
+  ForkTsCheckerWebpackPlugin {
+    "options": Object {
+      "async": true,
+      "issue": Object {
+        "exclude": Array [
+          Object {
+            "file": "**/src/**/__tests__/**",
+          },
+          Object {
+            "file": "**/src/**/?(*.){spec|test}.*",
+          },
+          Object {
+            "file": "**/src/setupProxy.*",
+          },
+          Object {
+            "file": "**/src/setupTests.*",
+          },
+        ],
+        "include": Array [
+          Object {
+            "file": "../**/src/**/*.{ts,tsx}",
+          },
+          Object {
+            "file": "**/src/**/*.{ts,tsx}",
+          },
+        ],
+      },
+      "logger": Object {
+        "infrastructure": "silent",
+      },
+      "typescript": Object {
+        "configOverwrite": Object {
+          "compilerOptions": Object {
+            "declarationMap": false,
+            "incremental": true,
+            "inlineSourceMap": false,
+            "noEmit": true,
+            "skipLibCheck": true,
+            "sourceMap": true,
+            "tsBuildInfoFile": "craco-next/packages/customize-cra-extra/node_modules/.cache/tsconfig.tsbuildinfo",
+          },
+        },
+        "context": "craco-next/packages/customize-cra-extra",
+        "diagnosticOptions": Object {
+          "syntactic": true,
+        },
+        "mode": "write-references",
+        "typescriptPath": "craco-next/node_modules/typescript/lib/typescript.js",
+      },
+    },
+  },
+  Plugin {},
+]
+`;
+
+exports[`addSourceMapLoader changeSourceMapLoader 1`] = `
+Object {
+  "enforce": "pre",
+  "exclude": /node_modules/,
+  "loader": "craco-next/node_modules/source-map-loader/dist/cjs.js",
+  "test": /\\\\\\.\\(js\\|mjs\\|jsx\\|ts\\|tsx\\|css\\)\\$/,
+}
+`;
+
+exports[`removeInternalBabelPlugin remove react-refresh 1`] = `
+Object {
+  "include": "craco-next/packages/customize-cra-extra/src",
+  "loader": "craco-next/node_modules/babel-loader/lib/index.js",
+  "options": Object {
+    "babelrc": false,
+    "cacheCompression": false,
+    "cacheDirectory": true,
+    "cacheIdentifier": "development:babel-plugin-named-asset-import@0.3.8:babel-preset-react-app@10.0.1:react-dev-utils@12.0.1:react-scripts@5.0.1",
+    "compact": false,
+    "configFile": false,
+    "customize": "craco-next/node_modules/babel-preset-react-app/webpack-overrides.js",
+    "plugins": Array [],
+    "presets": Array [
+      Array [
+        "craco-next/node_modules/babel-preset-react-app/index.js",
+        Object {
+          "runtime": "classic",
+        },
+      ],
+    ],
+  },
+  "test": /\\\\\\.\\(js\\|mjs\\|jsx\\|ts\\|tsx\\)\\$/,
+}
+`;
+
+exports[`removelugins clean ForkTsCheckerWebpackPlugin plugin 1`] = `
+Array [
+  HtmlWebpackPlugin {
+    "userOptions": Object {
+      "inject": true,
+      "template": "craco-next/packages/customize-cra-extra/public/index.html",
+    },
+    "version": 5,
+  },
+  InterpolateHtmlPlugin {
+    "htmlWebpackPlugin": [Function],
+    "replacements": Object {
+      "FAST_REFRESH": true,
+      "NODE_ENV": "test",
+      "PUBLIC_URL": "",
+      "WDS_SOCKET_HOST": undefined,
+      "WDS_SOCKET_PATH": undefined,
+      "WDS_SOCKET_PORT": undefined,
+    },
+  },
+  ModuleNotFoundPlugin {
+    "appPath": "craco-next/packages/customize-cra-extra",
+    "getRelativePath": [Function],
+    "prettierError": [Function],
+    "useYarnCommand": [Function],
+    "yarnLockFile": undefined,
+  },
+  DefinePlugin {
+    "definitions": Object {
+      "process.env": Object {
+        "FAST_REFRESH": "true",
+        "NODE_ENV": "\\"test\\"",
+        "PUBLIC_URL": "\\"\\"",
+        "WDS_SOCKET_HOST": undefined,
+        "WDS_SOCKET_PATH": undefined,
+        "WDS_SOCKET_PORT": undefined,
+      },
+    },
+  },
+  ReactRefreshPlugin {
+    "options": Object {
+      "exclude": /node_modules/i,
+      "include": /\\\\\\.\\(\\[cm\\]js\\|\\[jt\\]sx\\?\\|flow\\)\\$/i,
+      "overlay": false,
+    },
+  },
+  CaseSensitivePathsPlugin {
+    "fsOperations": 0,
+    "logger": BufferedConsole {
+      "Console": [Function],
+      "_buffer": Array [],
+      "_counters": Object {},
+      "_groupDepth": 0,
+      "_timers": Object {},
+      "assert": [Function],
+      "clear": [Function],
+      "count": [Function],
+      "countReset": [Function],
+      "debug": [Function],
+      "dir": [Function],
+      "dirxml": [Function],
+      "error": [Function],
+      "group": [Function],
+      "groupCollapsed": [Function],
+      "groupEnd": [Function],
+      "info": [Function],
+      "log": [Function],
+      "table": [Function],
+      "time": [Function],
+      "timeEnd": [Function],
+      "timeLog": [Function],
+      "trace": [Function],
+      "warn": [Function],
+    },
+    "options": Object {},
+    "pathCache": Map {},
+    "primed": false,
+  },
+  WebpackManifestPlugin {
+    "options": Object {
+      "basePath": "",
+      "fileName": "asset-manifest.json",
+      "filter": null,
+      "generate": [Function],
+      "map": null,
+      "publicPath": "/",
+      "removeKeyHash": /\\(\\[a-f0-9\\]\\{16,32\\}\\\\\\.\\?\\)/gi,
+      "seed": undefined,
+      "serialize": [Function],
+      "sort": null,
+      "transformExtensions": /\\^\\(gz\\|map\\)\\$/i,
+      "useEntryKeys": false,
+      "useLegacyEmit": false,
+      "writeToFileEmit": false,
+    },
+  },
+  IgnorePlugin {
+    "checkIgnore": [Function],
+    "options": Object {
+      "contextRegExp": /moment\\$/,
+      "resourceRegExp": /\\^\\\\\\.\\\\/locale\\$/,
+    },
+  },
+]
+`;
+
+exports[`removelugins remove ESLintWebpackPlugin plugin 1`] = `
+Array [
+  HtmlWebpackPlugin {
+    "userOptions": Object {
+      "inject": true,
+      "template": "craco-next/packages/customize-cra-extra/public/index.html",
+    },
+    "version": 5,
+  },
+  InterpolateHtmlPlugin {
+    "htmlWebpackPlugin": [Function],
+    "replacements": Object {
+      "FAST_REFRESH": true,
+      "NODE_ENV": "test",
+      "PUBLIC_URL": "",
+      "WDS_SOCKET_HOST": undefined,
+      "WDS_SOCKET_PATH": undefined,
+      "WDS_SOCKET_PORT": undefined,
+    },
+  },
+  ModuleNotFoundPlugin {
+    "appPath": "craco-next/packages/customize-cra-extra",
+    "getRelativePath": [Function],
+    "prettierError": [Function],
+    "useYarnCommand": [Function],
+    "yarnLockFile": undefined,
+  },
+  DefinePlugin {
+    "definitions": Object {
+      "process.env": Object {
+        "FAST_REFRESH": "true",
+        "NODE_ENV": "\\"test\\"",
+        "PUBLIC_URL": "\\"\\"",
+        "WDS_SOCKET_HOST": undefined,
+        "WDS_SOCKET_PATH": undefined,
+        "WDS_SOCKET_PORT": undefined,
+      },
+    },
+  },
+  ReactRefreshPlugin {
+    "options": Object {
+      "exclude": /node_modules/i,
+      "include": /\\\\\\.\\(\\[cm\\]js\\|\\[jt\\]sx\\?\\|flow\\)\\$/i,
+      "overlay": false,
+    },
+  },
+  CaseSensitivePathsPlugin {
+    "fsOperations": 0,
+    "logger": BufferedConsole {
+      "Console": [Function],
+      "_buffer": Array [],
+      "_counters": Object {},
+      "_groupDepth": 0,
+      "_timers": Object {},
+      "assert": [Function],
+      "clear": [Function],
+      "count": [Function],
+      "countReset": [Function],
+      "debug": [Function],
+      "dir": [Function],
+      "dirxml": [Function],
+      "error": [Function],
+      "group": [Function],
+      "groupCollapsed": [Function],
+      "groupEnd": [Function],
+      "info": [Function],
+      "log": [Function],
+      "table": [Function],
+      "time": [Function],
+      "timeEnd": [Function],
+      "timeLog": [Function],
+      "trace": [Function],
+      "warn": [Function],
+    },
+    "options": Object {},
+    "pathCache": Map {},
+    "primed": false,
+  },
+  WebpackManifestPlugin {
+    "options": Object {
+      "basePath": "",
+      "fileName": "asset-manifest.json",
+      "filter": null,
+      "generate": [Function],
+      "map": null,
+      "publicPath": "/",
+      "removeKeyHash": /\\(\\[a-f0-9\\]\\{16,32\\}\\\\\\.\\?\\)/gi,
+      "seed": undefined,
+      "serialize": [Function],
+      "sort": null,
+      "transformExtensions": /\\^\\(gz\\|map\\)\\$/i,
+      "useEntryKeys": false,
+      "useLegacyEmit": false,
+      "writeToFileEmit": false,
+    },
+  },
+  IgnorePlugin {
+    "checkIgnore": [Function],
+    "options": Object {
+      "contextRegExp": /moment\\$/,
+      "resourceRegExp": /\\^\\\\\\.\\\\/locale\\$/,
+    },
+  },
+  ForkTsCheckerWebpackPlugin {
+    "options": Object {
+      "async": true,
+      "issue": Object {
+        "exclude": Array [
+          Object {
+            "file": "**/src/**/__tests__/**",
+          },
+          Object {
+            "file": "**/src/**/?(*.){spec|test}.*",
+          },
+          Object {
+            "file": "**/src/setupProxy.*",
+          },
+          Object {
+            "file": "**/src/setupTests.*",
+          },
+        ],
+        "include": Array [
+          Object {
+            "file": "../**/src/**/*.{ts,tsx}",
+          },
+          Object {
+            "file": "**/src/**/*.{ts,tsx}",
+          },
+        ],
+      },
+      "logger": Object {
+        "infrastructure": "silent",
+      },
+      "typescript": Object {
+        "configOverwrite": Object {
+          "compilerOptions": Object {
+            "declarationMap": false,
+            "incremental": true,
+            "inlineSourceMap": false,
+            "noEmit": true,
+            "skipLibCheck": true,
+            "sourceMap": true,
+            "tsBuildInfoFile": "craco-next/packages/customize-cra-extra/node_modules/.cache/tsconfig.tsbuildinfo",
+          },
+        },
+        "context": "craco-next/packages/customize-cra-extra",
+        "diagnosticOptions": Object {
+          "syntactic": true,
+        },
+        "mode": "write-references",
+        "typescriptPath": "craco-next/node_modules/typescript/lib/typescript.js",
+      },
+    },
+  },
+]
+`;

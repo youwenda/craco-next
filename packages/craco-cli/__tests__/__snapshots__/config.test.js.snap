@@ -1,0 +1,1219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`start test development devServer 1`] = `
+Object {
+  "allowedHosts": "all",
+  "client": Object {
+    "overlay": Object {
+      "errors": true,
+      "warnings": false,
+    },
+    "webSocketURL": Object {
+      "hostname": undefined,
+      "pathname": undefined,
+      "port": undefined,
+    },
+  },
+  "compress": true,
+  "devMiddleware": Object {
+    "publicPath": "",
+  },
+  "headers": Object {
+    "Access-Control-Allow-Headers": "*",
+    "Access-Control-Allow-Methods": "*",
+    "Access-Control-Allow-Origin": "*",
+  },
+  "historyApiFallback": Object {
+    "disableDotRule": true,
+    "index": "/",
+  },
+  "host": "0.0.0.0",
+  "https": false,
+  "proxy": undefined,
+  "setupMiddlewares": [Function],
+  "static": Object {
+    "directory": "craco-next/packages/craco-cli/public",
+    "publicPath": Array [
+      "/",
+    ],
+    "watch": Object {
+      "ignored": /\\^\\(\\?!\\\\/Users\\\\/youwenda\\\\/works\\\\/craco\\\\x2dnext\\\\/packages\\\\/craco\\\\x2dcli\\\\/src\\\\/\\)\\.\\+\\\\/node_modules\\\\//g,
+    },
+  },
+}
+`;
+
+exports[`start test development getConfig 1`] = `
+Array [
+  Object {
+    "enforce": "pre",
+    "exclude": /node_modules/,
+    "loader": "craco-next/node_modules/source-map-loader/dist/cjs.js",
+    "test": /\\\\\\.\\(js\\|mjs\\|jsx\\|ts\\|tsx\\|css\\)\\$/,
+  },
+  Object {
+    "oneOf": Array [
+      Object {
+        "mimetype": "image/avif",
+        "parser": Object {
+          "dataUrlCondition": Object {
+            "maxSize": 10000,
+          },
+        },
+        "test": Array [
+          /\\\\\\.avif\\$/,
+        ],
+        "type": "asset",
+      },
+      Object {
+        "parser": Object {
+          "dataUrlCondition": Object {
+            "maxSize": 10000,
+          },
+        },
+        "test": Array [
+          /\\\\\\.bmp\\$/,
+          /\\\\\\.gif\\$/,
+          /\\\\\\.jpe\\?g\\$/,
+          /\\\\\\.png\\$/,
+        ],
+        "type": "asset",
+      },
+      Object {
+        "issuer": Object {
+          "and": Array [
+            /\\\\\\.\\(ts\\|tsx\\|js\\|jsx\\|md\\|mdx\\)\\$/,
+          ],
+        },
+        "test": /\\\\\\.svg\\$/,
+        "use": Array [
+          Object {
+            "loader": "craco-next/node_modules/@svgr/webpack/lib/index.js",
+            "options": Object {
+              "prettier": false,
+              "ref": true,
+              "svgo": false,
+              "svgoConfig": Object {
+                "plugins": Array [
+                  Object {
+                    "removeViewBox": false,
+                  },
+                ],
+              },
+              "titleProp": true,
+            },
+          },
+          Object {
+            "loader": "craco-next/node_modules/file-loader/dist/cjs.js",
+            "options": Object {
+              "name": "media/[name].[hash].[ext]",
+            },
+          },
+        ],
+      },
+      Object {
+        "include": "craco-next/packages/craco-cli/src",
+        "loader": "craco-next/node_modules/babel-loader/lib/index.js",
+        "options": Object {
+          "babelrc": true,
+          "cacheCompression": false,
+          "cacheDirectory": true,
+          "cacheIdentifier": "development:babel-plugin-named-asset-import@0.3.8:babel-preset-react-app@10.0.1:react-dev-utils@12.0.1:react-scripts@5.0.1",
+          "compact": false,
+          "configFile": false,
+          "customize": "craco-next/node_modules/babel-preset-react-app/webpack-overrides.js",
+          "plugins": Array [
+            "craco-next/node_modules/react-refresh/babel.js",
+            Array [
+              "import",
+              Object {
+                "camel2DashComponentName": false,
+                "libraryDirectory": "",
+                "libraryName": "lodash",
+              },
+              "fix-lodash-imports",
+            ],
+          ],
+          "presets": Array [
+            Array [
+              "craco-next/node_modules/babel-preset-react-app/index.js",
+              Object {
+                "runtime": "classic",
+              },
+            ],
+          ],
+        },
+        "test": /\\\\\\.\\(js\\|mjs\\|jsx\\|ts\\|tsx\\)\\$/,
+      },
+      Object {
+        "exclude": /@babel\\(\\?:\\\\/\\|\\\\\\\\\\{1,2\\}\\)runtime/,
+        "loader": "craco-next/node_modules/babel-loader/lib/index.js",
+        "options": Object {
+          "babelrc": false,
+          "cacheCompression": false,
+          "cacheDirectory": true,
+          "cacheIdentifier": "development:babel-plugin-named-asset-import@0.3.8:babel-preset-react-app@10.0.1:react-dev-utils@12.0.1:react-scripts@5.0.1",
+          "compact": false,
+          "configFile": false,
+          "inputSourceMap": true,
+          "presets": Array [
+            Array [
+              "craco-next/node_modules/babel-preset-react-app/dependencies.js",
+              Object {
+                "helpers": true,
+              },
+            ],
+          ],
+          "sourceMaps": true,
+        },
+        "test": /\\\\\\.\\(js\\|mjs\\)\\$/,
+      },
+      Object {
+        "exclude": /\\\\\\.module\\\\\\.css\\$/,
+        "sideEffects": true,
+        "test": /\\\\\\.css\\$/,
+        "use": Array [
+          "craco-next/node_modules/style-loader/dist/cjs.js",
+          Object {
+            "loader": "craco-next/node_modules/css-loader/dist/cjs.js",
+            "options": Object {
+              "importLoaders": 1,
+              "modules": Object {
+                "mode": "icss",
+              },
+              "sourceMap": true,
+            },
+          },
+          Object {
+            "loader": "craco-next/node_modules/postcss-loader/dist/cjs.js",
+            "options": Object {
+              "postcssOptions": Object {
+                "config": false,
+                "ident": "postcss",
+                "plugins": Array [
+                  "postcss-flexbugs-fixes",
+                  Array [
+                    "postcss-preset-env",
+                    Object {
+                      "autoprefixer": Object {
+                        "flexbox": "no-2009",
+                      },
+                      "stage": 4,
+                    },
+                  ],
+                  "postcss-normalize",
+                ],
+              },
+              "sourceMap": false,
+            },
+          },
+        ],
+      },
+      Object {
+        "test": /\\\\\\.module\\\\\\.css\\$/,
+        "use": Array [
+          "craco-next/node_modules/style-loader/dist/cjs.js",
+          Object {
+            "loader": "craco-next/node_modules/css-loader/dist/cjs.js",
+            "options": Object {
+              "importLoaders": 1,
+              "modules": Object {
+                "getLocalIdent": [Function],
+                "mode": "local",
+              },
+              "sourceMap": true,
+            },
+          },
+          Object {
+            "loader": "craco-next/node_modules/postcss-loader/dist/cjs.js",
+            "options": Object {
+              "postcssOptions": Object {
+                "config": false,
+                "ident": "postcss",
+                "plugins": Array [
+                  "postcss-flexbugs-fixes",
+                  Array [
+                    "postcss-preset-env",
+                    Object {
+                      "autoprefixer": Object {
+                        "flexbox": "no-2009",
+                      },
+                      "stage": 4,
+                    },
+                  ],
+                  "postcss-normalize",
+                ],
+              },
+              "sourceMap": false,
+            },
+          },
+        ],
+      },
+      Object {
+        "exclude": /\\\\\\.module\\\\\\.less\\$/,
+        "sideEffects": true,
+        "test": /\\\\\\.less\\$/,
+        "use": Array [
+          "craco-next/node_modules/style-loader/dist/cjs.js",
+          Object {
+            "loader": "craco-next/node_modules/css-loader/dist/cjs.js",
+            "options": Object {
+              "importLoaders": 3,
+              "modules": Object {
+                "mode": "icss",
+              },
+              "sourceMap": true,
+            },
+          },
+          Object {
+            "loader": "craco-next/node_modules/postcss-loader/dist/cjs.js",
+            "options": Object {
+              "postcssOptions": Object {
+                "config": false,
+                "ident": "postcss",
+                "plugins": Array [
+                  "postcss-flexbugs-fixes",
+                  Array [
+                    "postcss-preset-env",
+                    Object {
+                      "autoprefixer": Object {
+                        "flexbox": "no-2009",
+                      },
+                      "stage": 4,
+                    },
+                  ],
+                  "postcss-normalize",
+                ],
+              },
+              "sourceMap": true,
+            },
+          },
+          Object {
+            "loader": "craco-next/node_modules/resolve-url-loader/index.js",
+            "options": Object {
+              "root": "craco-next/packages/craco-cli/src",
+              "sourceMap": true,
+            },
+          },
+          Object {
+            "loader": "craco-next/node_modules/less-loader/dist/cjs.js",
+            "options": Object {
+              "sourceMap": true,
+            },
+          },
+        ],
+      },
+      Object {
+        "test": /\\\\\\.module\\\\\\.less\\$/,
+        "use": Array [
+          "craco-next/node_modules/style-loader/dist/cjs.js",
+          Object {
+            "loader": "craco-next/node_modules/css-loader/dist/cjs.js",
+            "options": Object {
+              "importLoaders": 3,
+              "modules": Object {
+                "getLocalIdent": [Function],
+                "mode": "local",
+              },
+              "sourceMap": true,
+            },
+          },
+          Object {
+            "loader": "craco-next/node_modules/postcss-loader/dist/cjs.js",
+            "options": Object {
+              "postcssOptions": Object {
+                "config": false,
+                "ident": "postcss",
+                "plugins": Array [
+                  "postcss-flexbugs-fixes",
+                  Array [
+                    "postcss-preset-env",
+                    Object {
+                      "autoprefixer": Object {
+                        "flexbox": "no-2009",
+                      },
+                      "stage": 4,
+                    },
+                  ],
+                  "postcss-normalize",
+                ],
+              },
+              "sourceMap": true,
+            },
+          },
+          Object {
+            "loader": "craco-next/node_modules/resolve-url-loader/index.js",
+            "options": Object {
+              "root": "craco-next/packages/craco-cli/src",
+              "sourceMap": true,
+            },
+          },
+          Object {
+            "loader": "craco-next/node_modules/less-loader/dist/cjs.js",
+            "options": Object {
+              "sourceMap": true,
+            },
+          },
+        ],
+      },
+      Object {
+        "exclude": /\\\\\\.module\\\\\\.\\(scss\\|sass\\)\\$/,
+        "sideEffects": true,
+        "test": /\\\\\\.\\(scss\\|sass\\)\\$/,
+        "use": Array [
+          "craco-next/node_modules/style-loader/dist/cjs.js",
+          Object {
+            "loader": "craco-next/node_modules/css-loader/dist/cjs.js",
+            "options": Object {
+              "importLoaders": 3,
+              "modules": Object {
+                "mode": "icss",
+              },
+              "sourceMap": true,
+            },
+          },
+          Object {
+            "loader": "craco-next/node_modules/postcss-loader/dist/cjs.js",
+            "options": Object {
+              "postcssOptions": Object {
+                "config": false,
+                "ident": "postcss",
+                "plugins": Array [
+                  "postcss-flexbugs-fixes",
+                  Array [
+                    "postcss-preset-env",
+                    Object {
+                      "autoprefixer": Object {
+                        "flexbox": "no-2009",
+                      },
+                      "stage": 4,
+                    },
+                  ],
+                  "postcss-normalize",
+                ],
+              },
+              "sourceMap": true,
+            },
+          },
+          Object {
+            "loader": "craco-next/node_modules/resolve-url-loader/index.js",
+            "options": Object {
+              "root": "craco-next/packages/craco-cli/src",
+              "sourceMap": true,
+            },
+          },
+          Object {
+            "loader": "craco-next/node_modules/sass-loader/dist/cjs.js",
+            "options": Object {
+              "sourceMap": true,
+            },
+          },
+        ],
+      },
+      Object {
+        "test": /\\\\\\.module\\\\\\.\\(scss\\|sass\\)\\$/,
+        "use": Array [
+          "craco-next/node_modules/style-loader/dist/cjs.js",
+          Object {
+            "loader": "craco-next/node_modules/css-loader/dist/cjs.js",
+            "options": Object {
+              "importLoaders": 3,
+              "modules": Object {
+                "getLocalIdent": [Function],
+                "mode": "local",
+              },
+              "sourceMap": true,
+            },
+          },
+          Object {
+            "loader": "craco-next/node_modules/postcss-loader/dist/cjs.js",
+            "options": Object {
+              "postcssOptions": Object {
+                "config": false,
+                "ident": "postcss",
+                "plugins": Array [
+                  "postcss-flexbugs-fixes",
+                  Array [
+                    "postcss-preset-env",
+                    Object {
+                      "autoprefixer": Object {
+                        "flexbox": "no-2009",
+                      },
+                      "stage": 4,
+                    },
+                  ],
+                  "postcss-normalize",
+                ],
+              },
+              "sourceMap": true,
+            },
+          },
+          Object {
+            "loader": "craco-next/node_modules/resolve-url-loader/index.js",
+            "options": Object {
+              "root": "craco-next/packages/craco-cli/src",
+              "sourceMap": true,
+            },
+          },
+          Object {
+            "loader": "craco-next/node_modules/sass-loader/dist/cjs.js",
+            "options": Object {
+              "sourceMap": true,
+            },
+          },
+        ],
+      },
+      Object {
+        "exclude": Array [
+          /\\^\\$/,
+          /\\\\\\.\\(js\\|mjs\\|jsx\\|ts\\|tsx\\)\\$/,
+          /\\\\\\.html\\$/,
+          /\\\\\\.json\\$/,
+        ],
+        "type": "asset/resource",
+      },
+    ],
+  },
+]
+`;
+
+exports[`start test production getConfig 1`] = `
+Object {
+  "bail": true,
+  "cache": Object {
+    "buildDependencies": Object {
+      "config": Array [
+        "craco-next/node_modules/react-scripts/config/webpack.config.js",
+      ],
+      "defaultWebpack": Array [
+        "webpack/lib/",
+      ],
+      "tsconfig": Array [],
+    },
+    "cacheDirectory": "craco-next/packages/craco-cli/node_modules/.cache",
+    "store": "pack",
+    "type": "filesystem",
+    "version": "fd29815a896a0fa4412eb36034ff2cae",
+  },
+  "devtool": "source-map",
+  "entry": Object {
+    "index": Array [
+      "craco-next/packages/craco-cli/src/index",
+    ],
+  },
+  "infrastructureLogging": Object {
+    "level": "none",
+  },
+  "mode": "production",
+  "module": Object {
+    "rules": Array [
+      Object {
+        "enforce": "pre",
+        "exclude": /node_modules/,
+        "loader": "craco-next/node_modules/source-map-loader/dist/cjs.js",
+        "test": /\\\\\\.\\(js\\|mjs\\|jsx\\|ts\\|tsx\\|css\\)\\$/,
+      },
+      Object {
+        "oneOf": Array [
+          Object {
+            "mimetype": "image/avif",
+            "parser": Object {
+              "dataUrlCondition": Object {
+                "maxSize": 10000,
+              },
+            },
+            "test": Array [
+              /\\\\\\.avif\\$/,
+            ],
+            "type": "asset",
+          },
+          Object {
+            "parser": Object {
+              "dataUrlCondition": Object {
+                "maxSize": 10000,
+              },
+            },
+            "test": Array [
+              /\\\\\\.bmp\\$/,
+              /\\\\\\.gif\\$/,
+              /\\\\\\.jpe\\?g\\$/,
+              /\\\\\\.png\\$/,
+            ],
+            "type": "asset",
+          },
+          Object {
+            "issuer": Object {
+              "and": Array [
+                /\\\\\\.\\(ts\\|tsx\\|js\\|jsx\\|md\\|mdx\\)\\$/,
+              ],
+            },
+            "test": /\\\\\\.svg\\$/,
+            "use": Array [
+              Object {
+                "loader": "craco-next/node_modules/@svgr/webpack/lib/index.js",
+                "options": Object {
+                  "prettier": false,
+                  "ref": true,
+                  "svgo": false,
+                  "svgoConfig": Object {
+                    "plugins": Array [
+                      Object {
+                        "removeViewBox": false,
+                      },
+                    ],
+                  },
+                  "titleProp": true,
+                },
+              },
+              Object {
+                "loader": "craco-next/node_modules/file-loader/dist/cjs.js",
+                "options": Object {
+                  "name": "media/[name].[hash].[ext]",
+                },
+              },
+            ],
+          },
+          Object {
+            "include": "craco-next/packages/craco-cli/src",
+            "loader": "craco-next/node_modules/babel-loader/lib/index.js",
+            "options": Object {
+              "babelrc": true,
+              "cacheCompression": false,
+              "cacheDirectory": true,
+              "cacheIdentifier": "production:babel-plugin-named-asset-import@0.3.8:babel-preset-react-app@10.0.1:react-dev-utils@12.0.1:react-scripts@5.0.1",
+              "compact": true,
+              "configFile": false,
+              "customize": "craco-next/node_modules/babel-preset-react-app/webpack-overrides.js",
+              "plugins": Array [
+                Array [
+                  "import",
+                  Object {
+                    "camel2DashComponentName": false,
+                    "libraryDirectory": "",
+                    "libraryName": "lodash",
+                  },
+                  "fix-lodash-imports",
+                ],
+              ],
+              "presets": Array [
+                Array [
+                  "craco-next/node_modules/babel-preset-react-app/index.js",
+                  Object {
+                    "runtime": "classic",
+                  },
+                ],
+              ],
+            },
+            "test": /\\\\\\.\\(js\\|mjs\\|jsx\\|ts\\|tsx\\)\\$/,
+          },
+          Object {
+            "exclude": /@babel\\(\\?:\\\\/\\|\\\\\\\\\\{1,2\\}\\)runtime/,
+            "loader": "craco-next/node_modules/babel-loader/lib/index.js",
+            "options": Object {
+              "babelrc": false,
+              "cacheCompression": false,
+              "cacheDirectory": true,
+              "cacheIdentifier": "production:babel-plugin-named-asset-import@0.3.8:babel-preset-react-app@10.0.1:react-dev-utils@12.0.1:react-scripts@5.0.1",
+              "compact": false,
+              "configFile": false,
+              "inputSourceMap": true,
+              "presets": Array [
+                Array [
+                  "craco-next/node_modules/babel-preset-react-app/dependencies.js",
+                  Object {
+                    "helpers": true,
+                  },
+                ],
+              ],
+              "sourceMaps": true,
+            },
+            "test": /\\\\\\.\\(js\\|mjs\\)\\$/,
+          },
+          Object {
+            "exclude": /\\\\\\.module\\\\\\.css\\$/,
+            "sideEffects": true,
+            "test": /\\\\\\.css\\$/,
+            "use": Array [
+              Object {
+                "loader": "craco-next/node_modules/mini-css-extract-plugin/dist/loader.js",
+                "options": Object {},
+              },
+              Object {
+                "loader": "craco-next/node_modules/css-loader/dist/cjs.js",
+                "options": Object {
+                  "importLoaders": 1,
+                  "modules": Object {
+                    "mode": "icss",
+                  },
+                  "sourceMap": true,
+                },
+              },
+              Object {
+                "loader": "craco-next/node_modules/postcss-loader/dist/cjs.js",
+                "options": Object {
+                  "postcssOptions": Object {
+                    "config": false,
+                    "ident": "postcss",
+                    "plugins": Array [
+                      "postcss-flexbugs-fixes",
+                      Array [
+                        "postcss-preset-env",
+                        Object {
+                          "autoprefixer": Object {
+                            "flexbox": "no-2009",
+                          },
+                          "stage": 4,
+                        },
+                      ],
+                      "postcss-normalize",
+                    ],
+                  },
+                  "sourceMap": false,
+                },
+              },
+            ],
+          },
+          Object {
+            "test": /\\\\\\.module\\\\\\.css\\$/,
+            "use": Array [
+              Object {
+                "loader": "craco-next/node_modules/mini-css-extract-plugin/dist/loader.js",
+                "options": Object {},
+              },
+              Object {
+                "loader": "craco-next/node_modules/css-loader/dist/cjs.js",
+                "options": Object {
+                  "importLoaders": 1,
+                  "modules": Object {
+                    "getLocalIdent": [Function],
+                    "mode": "local",
+                  },
+                  "sourceMap": true,
+                },
+              },
+              Object {
+                "loader": "craco-next/node_modules/postcss-loader/dist/cjs.js",
+                "options": Object {
+                  "postcssOptions": Object {
+                    "config": false,
+                    "ident": "postcss",
+                    "plugins": Array [
+                      "postcss-flexbugs-fixes",
+                      Array [
+                        "postcss-preset-env",
+                        Object {
+                          "autoprefixer": Object {
+                            "flexbox": "no-2009",
+                          },
+                          "stage": 4,
+                        },
+                      ],
+                      "postcss-normalize",
+                    ],
+                  },
+                  "sourceMap": false,
+                },
+              },
+            ],
+          },
+          Object {
+            "exclude": /\\\\\\.module\\\\\\.less\\$/,
+            "sideEffects": true,
+            "test": /\\\\\\.less\\$/,
+            "use": Array [
+              Object {
+                "loader": "craco-next/node_modules/mini-css-extract-plugin/dist/loader.js",
+                "options": Object {},
+              },
+              Object {
+                "loader": "craco-next/node_modules/css-loader/dist/cjs.js",
+                "options": Object {
+                  "importLoaders": 3,
+                  "modules": Object {
+                    "mode": "icss",
+                  },
+                  "sourceMap": true,
+                },
+              },
+              Object {
+                "loader": "craco-next/node_modules/postcss-loader/dist/cjs.js",
+                "options": Object {
+                  "postcssOptions": Object {
+                    "config": false,
+                    "ident": "postcss",
+                    "plugins": Array [
+                      "postcss-flexbugs-fixes",
+                      Array [
+                        "postcss-preset-env",
+                        Object {
+                          "autoprefixer": Object {
+                            "flexbox": "no-2009",
+                          },
+                          "stage": 4,
+                        },
+                      ],
+                      "postcss-normalize",
+                    ],
+                  },
+                  "sourceMap": true,
+                },
+              },
+              Object {
+                "loader": "craco-next/node_modules/resolve-url-loader/index.js",
+                "options": Object {
+                  "root": "craco-next/packages/craco-cli/src",
+                  "sourceMap": true,
+                },
+              },
+              Object {
+                "loader": "craco-next/node_modules/less-loader/dist/cjs.js",
+                "options": Object {
+                  "sourceMap": true,
+                },
+              },
+            ],
+          },
+          Object {
+            "test": /\\\\\\.module\\\\\\.less\\$/,
+            "use": Array [
+              Object {
+                "loader": "craco-next/node_modules/mini-css-extract-plugin/dist/loader.js",
+                "options": Object {},
+              },
+              Object {
+                "loader": "craco-next/node_modules/css-loader/dist/cjs.js",
+                "options": Object {
+                  "importLoaders": 3,
+                  "modules": Object {
+                    "getLocalIdent": [Function],
+                    "mode": "local",
+                  },
+                  "sourceMap": true,
+                },
+              },
+              Object {
+                "loader": "craco-next/node_modules/postcss-loader/dist/cjs.js",
+                "options": Object {
+                  "postcssOptions": Object {
+                    "config": false,
+                    "ident": "postcss",
+                    "plugins": Array [
+                      "postcss-flexbugs-fixes",
+                      Array [
+                        "postcss-preset-env",
+                        Object {
+                          "autoprefixer": Object {
+                            "flexbox": "no-2009",
+                          },
+                          "stage": 4,
+                        },
+                      ],
+                      "postcss-normalize",
+                    ],
+                  },
+                  "sourceMap": true,
+                },
+              },
+              Object {
+                "loader": "craco-next/node_modules/resolve-url-loader/index.js",
+                "options": Object {
+                  "root": "craco-next/packages/craco-cli/src",
+                  "sourceMap": true,
+                },
+              },
+              Object {
+                "loader": "craco-next/node_modules/less-loader/dist/cjs.js",
+                "options": Object {
+                  "sourceMap": true,
+                },
+              },
+            ],
+          },
+          Object {
+            "exclude": /\\\\\\.module\\\\\\.\\(scss\\|sass\\)\\$/,
+            "sideEffects": true,
+            "test": /\\\\\\.\\(scss\\|sass\\)\\$/,
+            "use": Array [
+              Object {
+                "loader": "craco-next/node_modules/mini-css-extract-plugin/dist/loader.js",
+                "options": Object {},
+              },
+              Object {
+                "loader": "craco-next/node_modules/css-loader/dist/cjs.js",
+                "options": Object {
+                  "importLoaders": 3,
+                  "modules": Object {
+                    "mode": "icss",
+                  },
+                  "sourceMap": true,
+                },
+              },
+              Object {
+                "loader": "craco-next/node_modules/postcss-loader/dist/cjs.js",
+                "options": Object {
+                  "postcssOptions": Object {
+                    "config": false,
+                    "ident": "postcss",
+                    "plugins": Array [
+                      "postcss-flexbugs-fixes",
+                      Array [
+                        "postcss-preset-env",
+                        Object {
+                          "autoprefixer": Object {
+                            "flexbox": "no-2009",
+                          },
+                          "stage": 4,
+                        },
+                      ],
+                      "postcss-normalize",
+                    ],
+                  },
+                  "sourceMap": true,
+                },
+              },
+              Object {
+                "loader": "craco-next/node_modules/resolve-url-loader/index.js",
+                "options": Object {
+                  "root": "craco-next/packages/craco-cli/src",
+                  "sourceMap": true,
+                },
+              },
+              Object {
+                "loader": "craco-next/node_modules/sass-loader/dist/cjs.js",
+                "options": Object {
+                  "sourceMap": true,
+                },
+              },
+            ],
+          },
+          Object {
+            "test": /\\\\\\.module\\\\\\.\\(scss\\|sass\\)\\$/,
+            "use": Array [
+              Object {
+                "loader": "craco-next/node_modules/mini-css-extract-plugin/dist/loader.js",
+                "options": Object {},
+              },
+              Object {
+                "loader": "craco-next/node_modules/css-loader/dist/cjs.js",
+                "options": Object {
+                  "importLoaders": 3,
+                  "modules": Object {
+                    "getLocalIdent": [Function],
+                    "mode": "local",
+                  },
+                  "sourceMap": true,
+                },
+              },
+              Object {
+                "loader": "craco-next/node_modules/postcss-loader/dist/cjs.js",
+                "options": Object {
+                  "postcssOptions": Object {
+                    "config": false,
+                    "ident": "postcss",
+                    "plugins": Array [
+                      "postcss-flexbugs-fixes",
+                      Array [
+                        "postcss-preset-env",
+                        Object {
+                          "autoprefixer": Object {
+                            "flexbox": "no-2009",
+                          },
+                          "stage": 4,
+                        },
+                      ],
+                      "postcss-normalize",
+                    ],
+                  },
+                  "sourceMap": true,
+                },
+              },
+              Object {
+                "loader": "craco-next/node_modules/resolve-url-loader/index.js",
+                "options": Object {
+                  "root": "craco-next/packages/craco-cli/src",
+                  "sourceMap": true,
+                },
+              },
+              Object {
+                "loader": "craco-next/node_modules/sass-loader/dist/cjs.js",
+                "options": Object {
+                  "sourceMap": true,
+                },
+              },
+            ],
+          },
+          Object {
+            "exclude": Array [
+              /\\^\\$/,
+              /\\\\\\.\\(js\\|mjs\\|jsx\\|ts\\|tsx\\)\\$/,
+              /\\\\\\.html\\$/,
+              /\\\\\\.json\\$/,
+            ],
+            "type": "asset/resource",
+          },
+        ],
+      },
+    ],
+    "strictExportPresence": true,
+  },
+  "optimization": Object {
+    "minimize": true,
+    "minimizer": Array [
+      TerserPluginOverridden {
+        "options": Object {
+          "exclude": undefined,
+          "extractComments": false,
+          "include": undefined,
+          "minimizer": Object {
+            "implementation": [Function],
+            "options": Object {
+              "compress": Object {
+                "comparisons": false,
+                "ecma": 5,
+                "inline": 2,
+                "warnings": false,
+              },
+              "keep_classnames": false,
+              "keep_fnames": false,
+              "mangle": Object {
+                "safari10": true,
+              },
+              "output": Object {
+                "ascii_only": true,
+                "comments": false,
+                "ecma": 5,
+              },
+              "parse": Object {
+                "ecma": 8,
+              },
+            },
+          },
+          "parallel": true,
+          "test": /\\\\\\.\\[cm\\]\\?js\\(\\\\\\?\\.\\*\\)\\?\\$/i,
+        },
+      },
+      CssMinimizerPlugin {
+        "options": Object {
+          "exclude": undefined,
+          "include": undefined,
+          "minimizer": Object {
+            "implementation": [Function],
+            "options": Object {},
+          },
+          "parallel": true,
+          "test": /\\\\\\.css\\(\\\\\\?\\.\\*\\)\\?\\$/i,
+          "warningsFilter": [Function],
+        },
+      },
+    ],
+    "runtimeChunk": false,
+    "splitChunks": Object {
+      "chunks": "async",
+      "name": false,
+    },
+  },
+  "output": Object {
+    "assetModuleFilename": "media/[name].[hash][ext]",
+    "chunkFilename": "chunks/[name].[contenthash:8].js",
+    "devtoolModuleFilenameTemplate": [Function],
+    "filename": "[name].js",
+    "path": "craco-next/packages/craco-cli/build",
+    "pathinfo": false,
+    "publicPath": "/",
+  },
+  "performance": false,
+  "plugins": Array [
+    HtmlWebpackPlugin {
+      "userOptions": Object {
+        "chunks": Array [
+          "index",
+        ],
+        "filename": "index.html",
+        "inject": true,
+        "minify": Object {
+          "collapseWhitespace": true,
+          "keepClosingSlash": true,
+          "minifyCSS": true,
+          "minifyJS": true,
+          "minifyURLs": true,
+          "removeComments": true,
+          "removeEmptyAttributes": true,
+          "removeRedundantAttributes": true,
+          "removeStyleLinkTypeAttributes": true,
+          "useShortDoctype": true,
+        },
+        "scriptLoading": "blocking",
+        "template": "craco-next/packages/craco-cli/public/index.html",
+      },
+      "version": 5,
+    },
+    InterpolateHtmlPlugin {
+      "htmlWebpackPlugin": [Function],
+      "replacements": Object {
+        "FAST_REFRESH": true,
+        "NODE_ENV": "production",
+        "PUBLIC_URL": "",
+        "WDS_SOCKET_HOST": undefined,
+        "WDS_SOCKET_PATH": undefined,
+        "WDS_SOCKET_PORT": undefined,
+      },
+    },
+    ModuleNotFoundPlugin {
+      "appPath": "craco-next/packages/craco-cli",
+      "getRelativePath": [Function],
+      "prettierError": [Function],
+      "useYarnCommand": [Function],
+      "yarnLockFile": undefined,
+    },
+    DefinePlugin {
+      "definitions": Object {
+        "process.env": Object {
+          "FAST_REFRESH": "true",
+          "NODE_ENV": "\\"production\\"",
+          "PUBLIC_URL": "\\"\\"",
+          "WDS_SOCKET_HOST": undefined,
+          "WDS_SOCKET_PATH": undefined,
+          "WDS_SOCKET_PORT": undefined,
+        },
+      },
+    },
+    IgnorePlugin {
+      "checkIgnore": [Function],
+      "options": Object {
+        "contextRegExp": /moment\\$/,
+        "resourceRegExp": /\\^\\\\\\.\\\\/locale\\$/,
+      },
+    },
+    WebpackInjectPlugin {
+      "loader": [Function],
+      "options": Object {
+        "entryName": undefined,
+        "entryOrder": "First",
+        "loaderID": "webpack-inject-module-1",
+      },
+    },
+    MiniCssExtractPlugin {
+      "_sortedModulesCache": WeakMap {},
+      "options": Object {
+        "chunkFilename": "chunks/[name].[contenthash:8].css",
+        "experimentalUseImportModule": undefined,
+        "filename": "[name].css",
+        "ignoreOrder": false,
+        "runtime": true,
+      },
+      "runtimeOptions": Object {
+        "attributes": undefined,
+        "insert": undefined,
+        "linkType": "text/css",
+      },
+    },
+    DllReferencePlugin {
+      "_compilationData": WeakMap {},
+      "options": Object {
+        "context": "craco-next/packages/craco-cli",
+        "manifest": "craco-next/packages/craco-cli/build/vendors/vendors-manifest.json",
+      },
+    },
+    WebpackBarPlugin {
+      "dependenciesCount": 10000,
+      "handler": [Function],
+      "modulesCount": 5000,
+      "options": Object {
+        "color": "green",
+        "name": "webpack",
+        "reporter": null,
+        "reporters": Array [
+          "fancy",
+        ],
+      },
+      "percentBy": undefined,
+      "profile": false,
+      "reporters": Array [
+        FancyReporter {},
+      ],
+      "showActiveModules": true,
+      "showDependencies": true,
+      "showEntries": true,
+      "showModules": true,
+    },
+    FilterCSSConflictingWarning {},
+    ProvidePlugin {
+      "definitions": Object {
+        "process": "craco-next/node_modules/process/browser.js",
+      },
+    },
+    ProvidePlugin {
+      "definitions": Object {
+        "Buffer": Array [
+          "buffer",
+          "Buffer",
+        ],
+      },
+    },
+  ],
+  "resolve": Object {
+    "alias": Object {
+      "@": "craco-next/packages/craco-cli/src",
+      "react-native": "react-native-web",
+    },
+    "extensions": Array [
+      ".web.mjs",
+      ".mjs",
+      ".web.js",
+      ".js",
+      ".json",
+      ".web.jsx",
+      ".jsx",
+    ],
+    "fallback": Object {
+      "_stream_duplex": "craco-next/node_modules/node-libs-browser/node_modules/readable-stream/duplex.js",
+      "_stream_passthrough": "craco-next/node_modules/node-libs-browser/node_modules/readable-stream/passthrough.js",
+      "_stream_readable": "craco-next/node_modules/node-libs-browser/node_modules/readable-stream/readable.js",
+      "_stream_transform": "craco-next/node_modules/node-libs-browser/node_modules/readable-stream/transform.js",
+      "_stream_writable": "craco-next/node_modules/node-libs-browser/node_modules/readable-stream/writable.js",
+      "assert": "craco-next/node_modules/assert/assert.js",
+      "buffer": "craco-next/node_modules/buffer/index.js",
+      "child_process": false,
+      "cluster": false,
+      "console": "craco-next/node_modules/console-browserify/index.js",
+      "constants": "craco-next/node_modules/constants-browserify/constants.json",
+      "crypto": "craco-next/node_modules/crypto-browserify/index.js",
+      "dgram": false,
+      "dns": false,
+      "domain": "craco-next/node_modules/domain-browser/source/index.js",
+      "events": "craco-next/node_modules/events/events.js",
+      "fs": false,
+      "http": false,
+      "https": false,
+      "module": false,
+      "net": false,
+      "os": "craco-next/node_modules/os-browserify/browser.js",
+      "path": "craco-next/node_modules/path-browserify/index.js",
+      "process": "craco-next/node_modules/process/browser.js",
+      "punycode": "craco-next/node_modules/node-libs-browser/node_modules/punycode/punycode.js",
+      "querystring": "craco-next/node_modules/querystring-es3/index.js",
+      "readline": false,
+      "repl": false,
+      "stream": "craco-next/node_modules/stream-browserify/index.js",
+      "string_decoder": "craco-next/node_modules/string_decoder/lib/string_decoder.js",
+      "sys": "craco-next/node_modules/util/util.js",
+      "timers": "craco-next/node_modules/timers-browserify/main.js",
+      "tls": false,
+      "tty": "craco-next/node_modules/tty-browserify/index.js",
+      "url": "craco-next/node_modules/url/url.js",
+      "util": "craco-next/node_modules/util/util.js",
+      "vm": "craco-next/node_modules/vm-browserify/index.js",
+      "zlib": "craco-next/node_modules/browserify-zlib/lib/index.js",
+    },
+    "modules": Array [
+      "node_modules",
+      "craco-next/packages/craco-cli/node_modules",
+    ],
+    "plugins": Array [],
+  },
+  "stats": "errors-only",
+  "target": Array [
+    "browserslist",
+  ],
+}
+`;

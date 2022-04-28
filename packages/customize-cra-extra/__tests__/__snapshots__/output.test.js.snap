@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`merge test mergeOptimization 1`] = `
+Object {
+  "minimize": false,
+  "minimizer": Array [
+    TerserPlugin {
+      "options": Object {
+        "exclude": undefined,
+        "extractComments": true,
+        "include": undefined,
+        "minimizer": Object {
+          "implementation": [Function],
+          "options": Object {
+            "compress": Object {
+              "comparisons": false,
+              "ecma": 5,
+              "inline": 2,
+              "warnings": false,
+            },
+            "keep_classnames": false,
+            "keep_fnames": false,
+            "mangle": Object {
+              "safari10": true,
+            },
+            "output": Object {
+              "ascii_only": true,
+              "comments": false,
+              "ecma": 5,
+            },
+            "parse": Object {
+              "ecma": 8,
+            },
+          },
+        },
+        "parallel": true,
+        "test": /\\\\\\.\\[cm\\]\\?js\\(\\\\\\?\\.\\*\\)\\?\\$/i,
+      },
+    },
+    CssMinimizerPlugin {
+      "options": Object {
+        "exclude": undefined,
+        "include": undefined,
+        "minimizer": Object {
+          "implementation": [Function],
+          "options": Object {},
+        },
+        "parallel": true,
+        "test": /\\\\\\.css\\(\\\\\\?\\.\\*\\)\\?\\$/i,
+        "warningsFilter": [Function],
+      },
+    },
+  ],
+  "runtimeChunk": true,
+  "splitChunks": Object {
+    "chunks": "async",
+    "name": false,
+  },
+}
+`;
+
+exports[`merge test mergeOutput 1`] = `
+Object {
+  "assetModuleFilename": "media/[name].[hash][ext]",
+  "chunkFilename": "chunks/[name].js",
+  "devtoolModuleFilenameTemplate": [Function],
+  "filename": "[name].js",
+  "path": "craco-next/packages/customize-cra-extra/build",
+  "pathinfo": true,
+  "publicPath": "/",
+}
+`;
+
+exports[`merge test mergeWebpackResolveFallback 1`] = `
+Object {
+  "assert": false,
+  "buffer": false,
+  "console": false,
+  "constants": false,
+  "crypto": false,
+  "domain": false,
+  "events": false,
+  "http": false,
+  "https": false,
+  "os": false,
+  "path": false,
+  "process": false,
+  "punycode": false,
+  "querystring": false,
+  "stream": false,
+  "string_decoder": false,
+  "sys": false,
+  "timers": false,
+  "tty": false,
+  "url": false,
+  "util": false,
+  "vm": false,
+  "zlib": false,
+}
+`;
