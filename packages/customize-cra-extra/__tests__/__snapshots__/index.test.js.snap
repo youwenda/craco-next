@@ -199,6 +199,7 @@ Array [
   },
   WebpackManifestPlugin {
     "options": Object {
+      "assetHookStage": Infinity,
       "basePath": "",
       "fileName": "asset-manifest.json",
       "filter": null,
@@ -392,6 +393,7 @@ Array [
   },
   WebpackManifestPlugin {
     "options": Object {
+      "assetHookStage": Infinity,
       "basePath": "",
       "fileName": "asset-manifest.json",
       "filter": null,
@@ -498,6 +500,7 @@ Array [
   },
   WebpackManifestPlugin {
     "options": Object {
+      "assetHookStage": Infinity,
       "basePath": "",
       "fileName": "asset-manifest.json",
       "filter": null,
